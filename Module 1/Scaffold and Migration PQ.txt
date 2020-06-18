@@ -1,0 +1,22 @@
+1. What rails command(s) will generate a Car model class and database migration?
+
+rails g scaffold car make model
+rails g model car make model
+
+2. What RDBMS table name will be automatically assigned to a model class called 'Car' when migrating schema in the development database?
+
+cars
+
+3. What columns are created in the database table by default for a Car model with make and model as model properties or fields?
+
+id, make, model, created_at, and updated_at
+
+4. What SQL column type does Rails create in Sqlite3 for a date of birth property defined as 'dob:date'?
+
+date
+
+5. How could you add a color property to the Car model after it was already created?
+
+rails g migration add_color_to_cars color 
+rails g migration add_color_to_cars color:string
+create a migration class
