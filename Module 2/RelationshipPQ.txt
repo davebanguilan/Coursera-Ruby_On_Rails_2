@@ -1,0 +1,29 @@
+1. Select an example of a 1:1 relationship.
+
+A chair has one student sitting in it
+
+2. Which relationship type owns the foreign key in the database to the other object?
+
+belongs to
+
+3. How do you specify a foreign key relationship using "rails g model" command?
+
+rails g model dog name owner:references
+
+4. Select a type that should be deleted when orphaned (relationship no longer exists)
+
+A former current home address replaced by a customer
+The Grades
+
+5. If the Dog owner table/type was actually a Person type and not Owner -- how would one define an owner method in the Dog model to return a Person that is their owner?
+
+has_one:owner, class_name: "Person"
+
+6. Which of the following definitions will remove the child record with the foreign key when the parent record is removed?
+
+dependent: :destroy
+dependent: :delete
+
+7. Select all true statements about link tables?
+
+all
