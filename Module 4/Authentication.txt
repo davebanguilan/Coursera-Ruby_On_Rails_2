@@ -1,0 +1,15 @@
+1. What does adding "has_secure_password" do to a model class?
+
+Stores a one-way hash
+
+2. Given the following partial ApplicationController class definition with protected methods logged_in?() and current_user()
+
+Declare them
+
+3. Given the following SessionsController snippet, which sessions/view pages are necessary
+
+sessions/new.html.erb
+
+4. Write a code snippet to store off the value of "user.id" into the current session using the key :user_id.
+
+session[:user_id]=user.id

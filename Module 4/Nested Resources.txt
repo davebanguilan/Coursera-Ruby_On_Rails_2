@@ -1,0 +1,28 @@
+1. What does line#3 of the following entry do when added to "config/routes.rb".
+
+Makes the index page for books the default page of the application.
+
+2. How can you display flash messages on an ERB page?
+
+<p id='notice'><%= notice %></p>
+<p id='alert'><%= alert %></p>
+
+
+<% flash.each do |key, value| %>
+  <p id='<%= key %>'><%= value %></p>
+<% end %>
+
+3. Given Books has a nested resource Notes and all Notes must reference a Book. Select which statements are true.
+
+Creating a Note
+Note must have a foreign key
+
+4. Given the following controller definition. What is the difference between "way1" and "way2".
+
+way 1 parameters are unfiltered raw inputs
+way 2 parameters are "strong parameters" because they have been filtered
+
+5. Given the following "rake routes" output, how would you form a link to the notes#destroy action to delete a note in a _note.html.erb partial?
+
+<%= link_to "Delete Note", [@book, note], method: :delete %>
+
